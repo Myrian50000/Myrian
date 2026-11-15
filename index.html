@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-index">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.6">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="exe-pass-score" content="5">
+<title>APP ELEMENTOS QUÍMICOS</title>
+<link rel="icon" type="image/x-icon" href="libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script>
+<script src="libs/jquery/jquery.min.js"> </script>
+<script src="libs/common_i18n.js"> </script>
+<script src="libs/common.js"> </script>
+<script src="libs/exe_export.js"> </script>
+
+<script src="libs/bootstrap/bootstrap.bundle.min.js"> </script>
+<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+<script src="idevices/text/text.js"></script><link rel="stylesheet" href="idevices/text/text.css">
+<link rel="stylesheet" href="content/css/base.css">
+<script src="theme/style.js"> </script>
+<link rel="stylesheet" href="theme/style.css">
+
+
+</head>
+<body class="exe-export exe-single-page">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden">
+<main class="page">
+<header class="package-header"><p class="package-title">APP ELEMENTOS QUÍMICOS</p>
+<p class="package-subtitle">Aplicación interactiva para el aprendizaje de los símbolos y nombres de los elementos químicos.</p></header>
+<section id="section-7139edb4-a930-41ee-a833-e393dd6d4280">
+<header class="main-header">
+<div class="page-header">
+<h1 class="page-title">APPs FÍSICA Y QUÍMICA</h1>
+</div>
+</header>
+<div class="page-content">
+<article id="block-mwhq1mhr-r9mejbzvb" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1794740315677-wbqzgkpd8" class="idevice_node text" data-idevice-path="idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1794740315677-wbqzgkpd8&quot;}">
+<div class="exe-text-template">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --success: #27ae60;
+            --danger: #e74c3c;
+            --light: #ecf0f1;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 10px;
+            background: var(--light);
+            line-height: 1.6;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* ===== CABECERA CON LOGO ===== */
+        .cabecera {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .titulos {
+            flex: 1;
+        }
+
+        .titulos h1 {
+            margin: 0;
+            font-size: 1.6em;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        .subtitulo {
+            margin: 6px 0 0 0;
+            color: var(--secondary);
+            font-style: italic;
+            font-size: 1em;
+        }
+
+        .score {
+            text-align: right;
+            font-size: 1.2em;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .question-box {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .question-text {
+            font-size: 2em;
+            margin: 15px 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Ajuste milimétrico para que quepa todo el texto */
+        input {
+            width: 100%;
+            max-width: 420px; /* Un poco más ancho */
+            padding: 12px;
+            font-size: 1.1em; /* Letra ligeramente más pequeña */
+            border: 2px solid var(--secondary);
+            border-radius: 5px;
+            margin: 15px auto; /* Lo centra perfectamente */
+            display: block; 
+            text-align: center;
+        }
+
+        button {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            min-width: 200px;
+            margin-top: 10px; /* Un poco de aire arriba */
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        .feedback {
+            min-height: 25px;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .final-score {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--primary);
+            font-size: 0.85em;
+            line-height: 1.4;
+        }
+
+        .footer p { margin: 4px 0; }
+
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            .cabecera { flex-direction: column; text-align: center; gap: 10px; }
+            .titulos h1 { font-size: 1.3em; }
+            .question-text { font-size: 1.5em; }
+            input { width: 100%; }
+        }
+    </style>
+<div class="container"><!-- CABECERA CON LOGO DEL IES --><header class="cabecera"><img src="content/resources/logo-ies.png" alt="Logo IES Virgen de la Luz" class="logo" />
+<div class="titulos">
+<h1>LOS ELEMENTOS QUÍMICOS Y SUS SÍMBOLOS</h1>
+<p class="subtitulo">Departamento de Física y Química</p>
+</div>
+</header>
+<div class="score" id="score">Aciertos: 0/0</div>
+<div class="question-box">
+<div class="question-text" id="question"></div>
+<input type="text" id="answer" placeholder="ESCRIBE TU RESPUESTA" aria-label="Respuesta" onkeypress="handleKeyPress(event)" />
+<div class="feedback" id="feedback"></div>
+<button onclick="checkAnswer()">COMPROBAR RESPUESTA</button></div>
+<div id="final" class="final-score"></div>
+</div>
+<footer class="footer">
+<p><strong>IES Virgen de la Luz</strong> — Departamento de Física y Química</p>
+<p>© IES Virgen de la Luz · Uso educativo</p>
+</footer>
+<p>
+<script>
+        const elements = [
+            {symbol: 'H', names: ['hidrogeno', 'hidrógeno']},
+            {symbol: 'Li', names: ['litio']},
+            {symbol: 'Na', names: ['sodio']},
+            {symbol: 'K', names: ['potasio']},
+            {symbol: 'Rb', names: ['rubidio']},
+            {symbol: 'Cs', names: ['cesio']},
+            {symbol: 'Fr', names: ['francio']},
+            {symbol: 'Be', names: ['berilio']},
+            {symbol: 'Mg', names: ['magnesio']},
+            {symbol: 'Ca', names: ['calcio']},
+            {symbol: 'Sr', names: ['estroncio']},
+            {symbol: 'Ba', names: ['bario']},
+            {symbol: 'Ra', names: ['radio']},
+            {symbol: 'B', names: ['boro']},
+            {symbol: 'Al', names: ['aluminio']},
+            {symbol: 'Ga', names: ['galio']},
+            {symbol: 'In', names: ['indio']},
+            {symbol: 'Tl', names: ['talio']},
+            {symbol: 'C', names: ['carbono']},
+            {symbol: 'Si', names: ['silicio']},
+            {symbol: 'Ge', names: ['germanio']},
+            {symbol: 'Sn', names: ['estaño']},
+            {symbol: 'Pb', names: ['plomo']},
+            {symbol: 'N', names: ['nitrogeno', 'nitrógeno']},
+            {symbol: 'P', names: ['fosforo', 'fósforo']},
+            {symbol: 'As', names: ['arsenico', 'arsénico']},
+            {symbol: 'Sb', names: ['antimonio']},
+            {symbol: 'Bi', names: ['bismuto']},
+            {symbol: 'O', names: ['oxigeno', 'oxígeno']},
+            {symbol: 'S', names: ['azufre']},
+            {symbol: 'Se', names: ['selenio']},
+            {symbol: 'Te', names: ['telurio', 'teluro']},
+            {symbol: 'F', names: ['fluor', 'flúor']},
+            {symbol: 'Cl', names: ['cloro']},
+            {symbol: 'Br', names: ['bromo']},
+            {symbol: 'I', names: ['yodo']},
+            {symbol: 'Ne', names: ['neon', 'neón']},
+            {symbol: 'Ar', names: ['argon', 'argón']},
+            {symbol: 'Kr', names: ['kripton', 'kriptón']},
+            {symbol: 'Xe', names: ['xenon', 'xenón']},
+            {symbol: 'Rn', names: ['radon', 'radón']},
+            {symbol: 'Cr', names: ['cromo']},
+            {symbol: 'Mn', names: ['manganeso']},
+            {symbol: 'Fe', names: ['hierro']},
+            {symbol: 'Co', names: ['cobalto']},
+            {symbol: 'Ni', names: ['niquel', 'níquel']},
+            {symbol: 'Cu', names: ['cobre']},
+            {symbol: 'Zn', names: ['zinc', 'cinc']},
+            {symbol: 'Pd', names: ['paladio']},
+            {symbol: 'Ag', names: ['plata']},
+            {symbol: 'Cd', names: ['cadmio']},
+            {symbol: 'Pt', names: ['platino']},
+            {symbol: 'Au', names: ['oro']},
+            {symbol: 'Hg', names: ['mercurio']}
+        ];
+
+        let selectedElements = [];
+        let currentQuestionIndex = 0;
+        let currentElement;
+        let questionType;
+        let correctAnswers = 0;
+        let baseDelay = 1500;
+
+        function handleKeyPress(event) {
+            if(event.key === 'Enter') checkAnswer();
+        }
+
+        function normalizeString(str) {
+            return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function startGame() {
+            selectedElements = shuffle([...elements]);
+            currentQuestionIndex = 0;
+            correctAnswers = 0;
+            baseDelay = 1500;
+            document.getElementById('score').textContent = 'Aciertos: 0/0';
+            document.querySelector('.question-box').style.display = 'block';
+            document.getElementById('final').innerHTML = '';
+            nextQuestion();
+        }
+
+        function nextQuestion() {
+            if(currentQuestionIndex >= elements.length) { showFinalScore(); return; }
+            currentElement = selectedElements[currentQuestionIndex];
+            questionType = Math.random() < 0.5 ? 'symbol' : 'name';
+            document.getElementById('question').textContent = questionType === 'symbol' 
+                ? `¿Qué elemento tiene el símbolo ${currentElement.symbol}?`
+                : `¿Cuál es el símbolo de ${currentElement.names[0]}?`;
+            document.getElementById('answer').value = '';
+            document.getElementById('feedback').textContent = '';
+            document.getElementById('answer').focus();
+        }
+
+        function checkAnswer() {
+            const userAnswer = document.getElementById('answer').value.trim();
+            let isCorrect = false, correctAnswer;
+            if(questionType === 'symbol') {
+                const normalizedUser = normalizeString(userAnswer);
+                isCorrect = currentElement.names.some(name => normalizedUser === normalizeString(name));
+                correctAnswer = currentElement.names[0];
+            } else {
+                isCorrect = userAnswer === currentElement.symbol;
+                correctAnswer = currentElement.symbol;
+            }
+            if(isCorrect) {
+                correctAnswers++;
+                document.getElementById('feedback').textContent = '¡Correcto!';
+                document.getElementById('feedback').style.color = 'var(--success)';
+                baseDelay = Math.max(500, baseDelay - 100);
+            } else {
+                document.getElementById('feedback').textContent = `Incorrecto. La respuesta correcta es: ${correctAnswer}`;
+                document.getElementById('feedback').style.color = 'var(--danger)';
+                baseDelay = 1500;
+            }
+            document.getElementById('score').textContent = `Aciertos: ${correctAnswers}/${currentQuestionIndex + 1}`;
+            currentQuestionIndex++;
+            if(currentQuestionIndex < elements.length) {
+                setTimeout(nextQuestion, isCorrect ? baseDelay : 1500);
+            } else {
+                showFinalScore();
+            }
+        }
+
+        function showFinalScore() {
+            const totalQuestions = elements.length;
+            const percentage = (correctAnswers / totalQuestions) * 100;
+            let message;
+            if(percentage >= 90) message = '¡Excelente! Dominas los elementos químicos 🎉';
+            else if(percentage >= 70) message = '¡Buen trabajo! Sigue practicando 💪';
+            else if(percentage >= 50) message = '¡Vas mejorando! Repasa los que fallaste 📚';
+            else message = '¡Sigue intentándolo! La práctica hace al maestro 💡';
+            document.getElementById('final').innerHTML = `
+                <h2>Resultado final: ${correctAnswers}/${totalQuestions}</h2>
+                <p>${percentage.toFixed(1)}% de aciertos</p>
+                <p>${message}</p>
+                <button onclick="startGame()">Volver a intentar</button>
+            `;
+            document.querySelector('.question-box').style.display = 'none';
+        }
+
+        startGame();
+    </script>
+</p>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+
+</main>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+
+</body>
+</html>
